@@ -7,7 +7,6 @@
 		public static function indexAction()
 		{
 			$articles = ArticleRepository::getAllArticle();
-			var_dump("expression");
 			require(__DIR__ . "/../Views/index.php");
 		}
 	}
