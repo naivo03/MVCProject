@@ -9,5 +9,11 @@
 			$articles = ArticleRepository::getAllArticle();
 			require(__DIR__ . "/../Views/index.php");
 		}
+
+		public static function lireMonArticle($id)
+		{
+			$article = ArticleRepository::getArticleById($id);
+			require(__DIR__ . "/../Views/viewsArticle.php");
+		}
 	}
  ?>
